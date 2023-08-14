@@ -1,0 +1,274 @@
+/* font from googlefonts */
+
+  @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&family=Cinzel:wght@500&family=Noto+Sans+JP:wght@300&family=Orbitron:wght@500&family=Oswald:wght@200&family=Space+Mono:ital@1&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container{
+    width: 100%;
+    height: 100%vh; /* vh- view in full height */
+background-color: white;
+position: relative;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.navbar{
+    display: flex;/* flex- put in right side */
+    width: 84%;
+    margin-left: 30px;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listitem{
+    
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;/* to avoid the underline  */
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav ul li a:hover{/* hover is a pseudo class  */
+    color: red;
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: rgb(0, 0, 0);  
+    font-family: 'Noto Sans Vithkuqi', sans-serif; 
+}
+.para1{
+    color: rgb(0, 0, 0);
+   line-height: 22px; 
+}
+
+.head1{
+    font-family: 'Noto Sans Vithkuqi', sans-serif;
+}
+
+#mehta{
+    font-family: 'Noto Sans Vithkuqi', sans-serif;
+    color: rgb(108, 71, 195);
+}
+.detel a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+.images{
+position: absolute;
+right: 30px;
+height: 80%;
+width: 45%;
+bottom: 0px;
+}
+.images img{
+   position:absolute;
+   height: 100%;
+   left: 50%;
+   bottom: 0px;
+   transform: translateX(-50%);
+   transition: bottom 1s,left 1s;
+}
+.images:hover #shape{
+    bottom: 70px;
+}
+.images:hover #girl{
+    left: 40%;
+}
+/*  */ /*  */
+#about{
+    margin-left: 8%;
+    margin-top: 19%;
+}
+.aboutt{
+    text-align: center;
+    margin-top: 5rem;
+}
+.aboutt h1{
+    font-size: 35px;
+}
+.aboutt span{
+    font-size: 20px;
+    color: rgb(17, 219, 17);
+    margin-top: -100px;
+}
+
+.aboutc{
+/*1 rem= 16px 
+
+gap: 2rem; gAP IS used to put space between divisions */
+
+display: grid;
+grid-template-columns: repeat(2,1fr);
+}
+
+.about-img img{
+    width: 80% ;
+    height: %;
+    border-radius: 1rem;
+}
+.about-detel{
+    font-size: 19px;
+    font-weight: 500px;
+}
+#pp{
+    margin-top: 5rem;
+    align-items:;
+}
+.infr{
+    margin-top: 1rem;
+}
+.infm{
+    margin-bottom: .8rem;
+    font-weight: 500px;
+}
+.infr span{
+    margin-left: 1rem;
+}
+
+#skills{
+    margin: 8% 8% 0px 8%;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;   
+    margin-top: 2rem;
+}
+.skill-img img{
+    width: 90%;
+    padding-left:4rem ;
+}
+html{
+    scroll-behavior: smooth;
+}
+.bar-container{
+    margin-left: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem 1px;
+    margin-bottom: .5rem;
+    position: relative;
+   
+}
+
+
+.bar-container h3,span{
+    font-size: 1.5rem;
+    font-weight: 400px;
+}
+.base-bar{
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0px;
+    le
+}
+.html-bar{
+background-color: rgb(255,217,0);
+width: 95%;
+}
+.css-bar{
+    background-color: rgb(255,217,0);
+    width: 88%;
+}
+.react-bar{
+    background-color: rgb(255,217,0);
+    width: 89%;
+}
+.js-bar{
+    background-color: rgb(255,217,0);
+    width: 85%;
+}
+.icon-set{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    padding: .1rem;
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,rgb(255, 0, 0),rgb(238, 160, 15));
+}
+.icon:hover i{
+    color: rgb(200, 200, 200);
+    animation: shake .75s;
+}
+@keyframes shake{
+    10% {
+        transform: rotate(15deg);
+    }
+    20% {
+        transform: rotate(-15deg);
+    }
+    30% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+.cop{
+    text-align: center;
+}
+.up-arrow{
+
+    display: flex;
+    float: right;
+    font-size: 50px;
+
+}
+.up-arrow i{
+    color: black;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom right,rgb(255, 0, 0),rgb(238, 160, 15));
+}
+.up-arrow:hover i{
+    color: white;
+    animation: shake .75s;
+}
